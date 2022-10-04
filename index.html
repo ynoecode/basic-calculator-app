@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Basic Calculator App</title>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/imgs/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/imgs/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/imgs/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./src/imgs/favicon/site.webmanifest" />
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="./src/css/core.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="title-container">
+				<h4 class="title-text">Calculator</h4>
+			</div>
+			<div class="calc-container">
+				<div class="calculator">
+					<div class="calc-history">
+						<div class="calc-history-display">6+1+2</div>
+					</div>
+					<div class="calc-display">
+						<div class="calc-input-display">6+1+2</div>
+					</div>
+					<div class="calc-buttons">
+						<div class="btns">
+							<button class="btn btn-operator btn-percent" id="percent">&percnt;</button>
+							<button class="btn btn-operator btn-ce" id="ce">CE</button>
+							<button class="btn btn-operator btn-c" id="c">C</button>
+							<button class="btn btn-operator btn-bs" id="bs">
+								<i class="btn-bs-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+										<path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z" />
+										<path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z" />
+									</svg>
+								</i>
+							</button>
+						</div>
+						<div class="btns">
+							<button class="btn btn-num" id="7">7</button>
+							<button class="btn btn-num" id="8">8</button>
+							<button class="btn btn-num" id="9">9</button>
+							<button class="btn btn-operator" id="multiply">&times;</button>
+						</div>
+						<div class="btns">
+							<button class="btn btn-num" id="4">4</button>
+							<button class="btn btn-num" id="5">5</button>
+							<button class="btn btn-num" id="6">6</button>
+							<button class="btn btn-operator" id="subtraction">&minus;</button>
+						</div>
+						<div class="btns">
+							<button class="btn btn-num" id="1">1</button>
+							<button class="btn btn-num" id="2">2</button>
+							<button class="btn btn-num" id="3">3</button>
+							<button class="btn btn-operator" id="addition">&plus;</button>
+						</div>
+						<div class="btns">
+							<button class="btn btn-operator" id="divide">&divide;</button>
+							<button class="btn btn-num" id="0">0</button>
+							<button class="btn btn-operator" id="period">&period;</button>
+							<button class="btn btn-operator btn-equals" id="equals">&equals;</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./src/js/script.js"></script>
+	</body>
+</html>

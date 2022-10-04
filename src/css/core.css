@@ -1,0 +1,133 @@
+/* 
+  Google Fonts API
+  1. Comfortaa
+  2. Poppins
+*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color-light: #E80F88 ;
+  --primary-color-dark: #141E27;
+  --secondary-color-light: #E45826;
+  --secondary-color-dark: #372948;
+  --background-dark: #1B1A17;
+  --background-light: #E6D5B8;;
+  --shadow: black;
+  --btn-blue: #0F4C75;
+  --btn-red: #430D27;
+  --btn-green: #1E5128;
+  --btn-purple: #46244C;
+  --text-blue: #2FA4FF;
+  --text-red: #D61C4E;
+  --text-green: #38E54D;
+  --text-purple: #F637EC;
+  --btn-blue-hover: ;
+  --btn-red-hover: ;
+  --btn-green-hover: ;
+  --btn-purple-hover: ;
+}
+
+body {
+  background: var(--background-dark);
+  font-family: "Poppins";
+  color: var(--primary-color-light);
+}
+
+/* Container */
+.container {
+  
+}
+
+/* Title */
+.title-container {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Calculator */
+.calc-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: var(--primary-color-dark);
+  box-shadow: 0 0 30px var(--shadow);
+}
+
+.calc-history {
+  padding: 10px 0 0 0;
+  margin: 0 10px 0 0;
+}
+
+.calc-history-display {
+  text-align: right;
+}
+
+.calc-display {
+  padding: 30px 0 0 0;
+  margin: 10px 0 0 0;
+}
+
+.calc-input-display {
+  padding: 0 10px 0 0;
+  color: var(--primary-color-light);
+  font-size: 30px;
+  text-align: right;
+}
+
+.calc-buttons {
+  padding: 10px 0 0 0;
+}
+
+.btn {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  background: var(--secondary-color-dark);
+  color: var(--background-light);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.btn.btn-operator.btn-c {
+  background: var(--btn-red) !important;
+  color: var(--text-red) !important;
+}
+
+.btn.btn-num {
+  background: var(--btn-blue) !important;
+  color: var(--text-blue);
+}
+
+.btn.btn-operator {
+  background: var(--btn-purple) !important;
+  color: var(--text-purple) !important;
+}
+
+.btn.btn-equals {
+  background: var(--btn-green) !important;
+  color: var(--text-green) !important;
+}
+
+/* Hovers */
+.btn.btn-num:hover {
+  background: #D2DAFF !important;
+  color: #3D3C42;
+}
