@@ -21,10 +21,11 @@
   --text-red: #D61C4E;
   --text-green: #38E54D;
   --text-purple: #F637EC;
-  --btn-blue-hover: ;
-  --btn-red-hover: ;
-  --btn-green-hover: ;
-  --btn-purple-hover: ;
+  --btn-blue-hover: #47B5FF;
+  --btn-red-hover: #990000;
+  --btn-green-hover: #14C38E;
+  --btn-purple-hover: #554994;
+  --btn-hover-text: #FFF2F2;
 }
 
 body {
@@ -91,16 +92,20 @@ body {
 
 .calc-buttons {
   padding: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-rows: 70px;
+  grid-gap: 10px;
+  width: 100%;
 }
 
 .btn {
   height: 70px;
   width: 70px;
-  margin: 5px;
   background: var(--secondary-color-dark);
   color: var(--background-light);
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
   z-index: 1;
   font-size: 20px;
@@ -126,8 +131,32 @@ body {
   color: var(--text-green) !important;
 }
 
+.btn.btn-num.btn-zero {
+  width: 150px !important;
+  grid-column: 1/ span 2 !important;
+}
+
+.active-key {
+  filter: brightness(150%);
+}
+
 /* Hovers */
 .btn.btn-num:hover {
-  background: #D2DAFF !important;
-  color: #3D3C42;
+  background: var(--btn-blue-hover) !important;
+  color: var(--btn-hover-text) !important;
+}
+
+.btn.btn.btn-operator.btn-c:hover {
+  background: var(--btn-red-hover) !important;
+  color: var(--btn-hover-text) !important;
+}
+
+.btn.btn-operator:hover {
+  background: var(--btn-purple-hover) !important;
+  color: var(--btn-hover-text) !important;
+}
+
+.btn.btn-equals:hover {
+  background: var(--btn-green-hover) !important;
+  color: var(--btn-hover-text) !important;
 }
