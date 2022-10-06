@@ -36,11 +36,11 @@ const additionButton = document.getElementById("addition")
 const zeroButton = document.getElementById("zero")
 const displayScreen = document.getElementById("calc-input-display")
 
-let actualNumber = "";
-let saveNumber = "";
-let operation = "";
-let equal = "";
-let formula = "";
+let actualNumber = ""
+let saveNumber = ""
+let operation = ""
+let equal = false
+let formula = ""
 
 /**
  * ? Constants Keys
@@ -89,52 +89,43 @@ for (let i in Buttons) {
       case "8":
       case "9":
         if (operation && !saveNumber) {
-          saveNumber = actualNumber;
-          actualNumber = "";
+          saveNumber = actualNumber
+          actualNumber = ""
         } else if (saveNumber && operation && equal) {
-          actualNumber = "";
-          equal = false;
+          actualNumber = ""
+          equal = false
         }
-
-        actualNumber += action;
-
-        formula = actualNumber;
-        break;
-
+        actualNumber += action
+        formula = actualNumber
+        break
       /**
        * ? Decimal
        */
       case ".":
         if (!actualNumber.includes(".")) {
-          actualNumber += ".";
+          actualNumber += "."
         }
-
-        formula = actualNumber;
-        break;
-
+        formula = actualNumber
+        break
       /**
        * ? Negation
        */
       case "*-1":
         if (actualNumber) {
-          actualNumber = String(parseFloat(actualNumber) * -1);
+          actualNumber = String(parseFloat(actualNumber) * -1)
         }
-
-        formula = actualNumber;
-
-        break;
+        formula = actualNumber
+        break
       /**
        * ? Clear All Contents
        */
       case "c":
-        actualNumber = "";
-        saveNumber = "";
-        operation = "";
-        equal = false;
-
-        formula = actualNumber;
-        break;
-
+        actualNumber = ""
+        saveNumber = ""
+        operation = ""
+        equal = false
+        formula = actualNumber
+        break
       /**
        * ? Operations
        */
@@ -144,19 +135,14 @@ for (let i in Buttons) {
       case "+":
         if (saveNumber && actualNumber && !equal) {
           let result = calculateFunction.calculate();
-
-          equal = true;
-          saveNumber = result;
-
-          formula = saveNumber;
-
-          operation = action;
+          equal = true
+          saveNumber = result
+          formula = saveNumber
+          operation = action
         } else {
-          operation = action;
+          operation = action
         }
-
-        break;
-
+        break
       /**
        * ? Percent
        */
@@ -165,31 +151,27 @@ for (let i in Buttons) {
           if (operation == "+" || operation == "-") {
             actualNumber = String(
               parseFloat(saveNumber) * (parseFloat(actualNumber) / 100)
-            );
+            )
           } else if (operation == "/" || operation == "*") {
-            actualNumber = String(parseFloat(actualNumber) / 100);
+            actualNumber = String(parseFloat(actualNumber) / 100)
           }
         }
 
-        formula = actualNumber;
-        break;
-
+        formula = actualNumber
+        break
       /**
        * ? Calculate
        */
       case "=":
         if (saveNumber && actualNumber) {
-          let result = calculateFunction.calculate();
-
-          equal = true;
-          saveNumber = result;
-
-          formula = saveNumber;
+          let result = calculateFunction.calculate()
+          equal = true
+          saveNumber = result
+          formula = saveNumber
         }
-        break;
+        break
     }
-
-    displays.updateDisplay();
+    displays.updateDisplay()
   }
 }
 
@@ -232,9 +214,9 @@ let displays = {
   }
 }
 
-const checkActiveOperation = (key) => {
-  Buttons.addition.classList[`${key == "+" ? "add" : "remove"}`]("activekey")
-  Buttons.subtraction.classList[`${key == "*" ? "add" : "remove"}`]("activekey")
-  Buttons.divide.classList[`${key == "/" ? "add" : "remove"}`]("activekey")
-  Buttons.multiply.classList[`${key == "*" ? "add" : "remove"}`]("activekey")
+const checkActiveOperation = (button) => {
+  Buttons.addition.classList[`${button == "+" ? "add" : "remove"}`]("active-key")
+  Buttons.subtraction.classList[`${button == "-" ? "add" : "remove"}`]("active-key")
+  Buttons.divide.classList[`${button == "/" ? "add" : "remove"}`]("active-key")
+  Buttons.multiply.classList[`${button == "*" ? "add" : "remove"}`]("active-key")
 }
