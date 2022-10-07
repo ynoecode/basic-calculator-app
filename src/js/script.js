@@ -34,6 +34,8 @@ const twoButton = document.getElementById("two")
 const threeButton = document.getElementById("three")
 const additionButton = document.getElementById("addition")
 const zeroButton = document.getElementById("zero")
+const periodButton = document.getElementById("period")
+const equalsButton = document.getElementById("equals")
 const displayScreen = document.getElementById("calc-input-display")
 
 let actualNumber = ""
@@ -51,6 +53,8 @@ const Buttons = {
   multiply: multiplyButton,
   addition: additionButton,
   percent: percentButton,
+  period: periodButton,
+  equals: equalsButton,
   divide: divideButton,
   clear: clearButton,
   seven: sevenButton,
