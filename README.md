@@ -1,3 +1,7 @@
+<!-- Welcoming Section  -->
+<div align="center">
+  <img src="https://i.imgur.com/uxCpT8g.png" alt="App Name"/>
+</div>
 <hr />
  
 <!-- Contributor -->
