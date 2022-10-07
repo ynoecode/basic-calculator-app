@@ -46,7 +46,7 @@
 </div>
 
 <div align="center">
-  <a href="https://ynoecode.github.io/weather-app/">
+  <a href="https://ynoecode.github.io/basic-calculator-app/">
     <img src="https://i.imgur.com/XyoQuH0.png" alt="Web Preview"/>
   </a>
 </div>
