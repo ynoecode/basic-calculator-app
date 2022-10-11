@@ -61,3 +61,7 @@
     <img alt="Built With Love" src="https://ForTheBadge.com/images/badges/built-with-love.svg" width="20%"/>
   </p>
 </div>
+
+<hr />
+
+<img src="https://repobeats.axiom.co/api/embed/06ddad22938f9a372cce0c6f34cb6bf1945d3922.svg" alt="Repobeats analytics image" width="100%"/> 
