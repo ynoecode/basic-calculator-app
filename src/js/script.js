@@ -1,21 +1,5 @@
 /**
- * Suggested way for getting IDs
- */
-// const ButtonsArray = [
-//   "clear", 
-//   "plus_minus",
-// ]
-
-// let getter = {
-//   getButton: function () {
-//     for (let i = 0; i < ButtonsArray.length; i++) {
-//       document.getElementById(ButtonsArray[i])
-//     }
-//   }
-// }
-
-/**
- * ? Keys Variables
+ * ? Numbers & Operational Keys Variables
  */
 const clearButton = document.getElementById("clear")
 const negationButton = document.getElementById("negation")
@@ -38,6 +22,9 @@ const periodButton = document.getElementById("period")
 const equalsButton = document.getElementById("equals")
 const displayScreen = document.getElementById("calc-input-display")
 
+/**
+ * ? Initiators
+ */
 let actualNumber = ""
 let saveNumber = ""
 let operation = ""
@@ -45,7 +32,7 @@ let equal = false
 let formula = ""
 
 /**
- * ? Constants Keys
+ * ? Constants Numbers & Operational Keys
  */
 const Buttons = {
   subtraction: subtractionButton,
@@ -180,13 +167,13 @@ for (let i in Buttons) {
 }
 
 /**
- * ? Operations
+ * ? Calculating Function
  */
 let calculateFunction = {
 
-/**
- * ? Operations 
- */ 
+  /**
+  * ? Operations 
+  */ 
   calculate () {
     let result = 0
 
@@ -218,6 +205,10 @@ let displays = {
   }
 }
 
+
+/**
+ * ? It addeds `active-key` when then certian openration key is press.  
+ */ 
 const checkActiveOperation = (button) => {
   Buttons.addition.classList[`${button == "+" ? "add" : "remove"}`]("active-key")
   Buttons.subtraction.classList[`${button == "-" ? "add" : "remove"}`]("active-key")
