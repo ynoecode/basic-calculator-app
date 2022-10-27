@@ -45,14 +45,12 @@
 <!-- Preview Section Section -->
 <div align="center">
   <h4>
-    🖼 Preview (Click image to visit page.)
+    🖼 Preview
   </h4>
 </div>
 
 <div align="center">
-  <a href="https://ynoecode.github.io/basic-calculator-app/">
     <img src="https://i.imgur.com/XyoQuH0.png" alt="Web Preview"/>
-  </a>
 </div>
 <br />
 
