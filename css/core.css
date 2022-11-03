@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url("/src/imgs/bgs/bg.jpg");
+  background-image: url("/imgs/bgs/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Poppins";
