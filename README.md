@@ -1,6 +1,6 @@
 <!-- Welcoming Section  -->
 <div align="center">
-  <img src="https://i.imgur.com/uxCpT8g.png" alt="App Name"/>
+  <img src="https://i.imgur.com/p2slfZP.png" alt="App Name"/>
 </div>
 <hr />
  
@@ -50,7 +50,7 @@
 </div>
 
 <div align="center">
-    <img src="https://i.imgur.com/XyoQuH0.png" alt="Web Preview"/>
+    <img src="https://i.imgur.com/zrNcoB8.png" alt="Web Preview"/>
 </div>
 <br />
 
