@@ -93,6 +93,12 @@ body {
   font-size: 40px;
   white-space: nowrap;
   overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.calc-input-display::-webkit-scrollbar {
+  display: none;
 }
 
 .calc-buttons {
